@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Animal Rescue Team</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Animal Rescue Team</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#adopt">Adopt</a></li>
+                <li><a href="#add-animal">Add New Animal</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Our mission is to rescue, rehabilitate, and rehome animals in need. We believe every animal deserves a second chance.</p>
+        </section>
+
+        <section id="adopt">
+            <h2>Available Animals for Adoption</h2>
+            <div id="animal-list">
+                <div class="animal">
+                    <h3>Dog-Max</h3>
+                    <img src="max.jpg" alt="Max the Dog">
+                    <p>Breed: Labrador Retriever</p>
+                    <p>Age: 1 years</p>
+                    <button class="adopt-button">Adopt Max</button>
+                </div>
+                <!-- New animals will be added here -->
+            </div>
+        </section>
+
+        <section id="add-animal">
+            <h2>Add New Animal</h2>
+            <form id="add-animal-form">
+                <label for="animal-name">Name:</label>
+                <input type="text" id="animal-name" name="animal-name" required>
+                
+                <label for="animal-breed">Breed:</label>
+                <input type="text" id="animal-breed" name="animal-breed" required>
+                
+                <label for="animal-age">Age:</label>
+                <input type="text" id="animal-age" name="animal-age" required>
+                
+                <label for="animal-image">Image URL:</label>
+                <input type="url" id="animal-image" name="animal-image" required>
+                
+                <button type="submit">Add Animal</button>
+            </form>
+            <div id="add-animal-response"></div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you see an injured animal on the road, please let us know!</p>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required> </textarea>
+              
+              <label for="contact-number">Contact Number:</label>
+              <input type="tel" id="contact-number" name="contact-number" required>
+                
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="form-response"></div>
+        </section>
+    </main>
+
+    <footer>
+      <center>
+        <p>&copy; 2025 Animal Rescue Team. All rights reserved.</p>
+      </center>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
