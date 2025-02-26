@@ -41,67 +41,16 @@ section {
 
 .animal {
     margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .animal img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-}
-
-button {
-    background-color: #35424a;
-    color: white;
-    border: none;
-    padding: 10px 15px;body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}}
-
-header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 40px;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.animal {
-    margin-bottom: 20px;
-}
-
-.animal img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+    max-height: 200px;
 }
 
 button {
@@ -109,8 +58,90 @@ button {
     color: white;
     border: none;
     padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
 button:hover {
     background-color: #455a64;
+}
+
+/* Image Upload Styles */
+.image-source-toggle {
+    margin: 15px 0;
+    padding: 10px;
+    background: #f8f8f8;
+    border-radius: 5px;
+}
+
+.image-source-toggle label {
+    margin-right: 20px;
+}
+
+#file-upload-section {
+    margin-top: 10px;
+}
+
+#animal-image-file {
+    margin-top: 5px;
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea, select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#add-animal-response,
+#form-response {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
 }
